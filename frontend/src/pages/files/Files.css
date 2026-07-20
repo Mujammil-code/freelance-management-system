@@ -1,0 +1,50 @@
+.files-grid {
+  margin-bottom: var(--spacing-xl);
+}
+
+.file-asset-card {
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  position: relative;
+  transition: all var(--transition-fast);
+}
+.file-asset-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-primary);
+}
+
+.file-card-top-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.file-cat-icon {
+  opacity: 0.9;
+}
+
+.delete-file-btn {
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+.file-asset-card:hover .delete-file-btn {
+  opacity: 1;
+}
+
+.file-card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.file-asset-name-title {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}

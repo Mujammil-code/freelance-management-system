@@ -1,0 +1,21 @@
+.grid-name-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-md);
+}
+
+@media (max-width: 480px) {
+  .grid-name-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+.field-error-message {
+  color: #ef4444;
+  font-size: 0.825rem;
+  margin-top: 6px;
+  display: block;
+  font-weight: 500;
+  text-align: left;
+}

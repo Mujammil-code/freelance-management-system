@@ -1,0 +1,90 @@
+.projects-grid {
+  margin-bottom: var(--spacing-xl);
+}
+
+.project-card {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  transition: all var(--transition-fast);
+  min-height: 220px;
+}
+.project-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-primary);
+}
+
+.project-card-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-card-identity {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  flex: 1;
+}
+
+.project-card-title {
+  font-size: var(--font-size-md);
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: -0.3px;
+  line-height: 1.3;
+}
+.project-card-client-name {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+.project-card-category {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+}
+
+.project-card-progress-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  margin: var(--spacing-sm) 0;
+}
+.progress-labels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--color-border-light);
+  padding-top: var(--spacing-md);
+  margin-top: auto;
+}
+
+.project-footer-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+}
+
+.project-tech-chips {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+.tech-chip-xs {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-2);
+  color: var(--color-text-secondary);
+  border: 1px solid var(--color-border);
+}

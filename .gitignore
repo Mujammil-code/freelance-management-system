@@ -1,0 +1,10 @@
+# Ignore node modules and local build outputs
+**/node_modules/
+**/dist/
+**/target/
+**/.idea/
+**/.vscode/
+**/uploads/
+*.log
+.DS_Store
+Thumbs.db

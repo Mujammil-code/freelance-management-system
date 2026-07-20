@@ -1,0 +1,111 @@
+.command-palette-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(10, 15, 30, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  padding-top: 140px;
+}
+
+.command-palette-card {
+  width: 100%;
+  max-width: 600px;
+  height: max-content;
+  max-height: 480px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-xl);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0;
+}
+
+.palette-search-wrapper {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-bottom: 1px solid var(--color-border);
+  gap: var(--spacing-md);
+}
+
+.palette-search-icon {
+  color: var(--color-text-secondary);
+}
+
+.palette-search-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: var(--color-text);
+  font-size: var(--font-size-md);
+  outline: none;
+  font-family: var(--font-family);
+}
+.palette-search-input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.palette-kbd {
+  font-family: inherit;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  background: var(--color-surface-2);
+  border: 1.5px solid var(--color-border);
+  color: var(--color-text-secondary);
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+.palette-results-viewport {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--spacing-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.palette-results-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-label {
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  letter-spacing: 0.5px;
+  padding: var(--spacing-xs) var(--spacing-md);
+}
+
+.palette-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: 10px var(--spacing-md);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: background var(--transition-fast), color var(--transition-fast);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+}
+
+.palette-item.active {
+  background: var(--color-primary-bg);
+  color: var(--color-primary);
+}
+
+.palette-item svg {
+  flex-shrink: 0;
+}

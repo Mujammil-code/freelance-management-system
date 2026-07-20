@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    active: postgres
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+server:
+  port: 8080
+jwt:
+  secret: FreelanceOS_SuperSecret_JWT_Key_2024_Very_Long_And_Secure_Key_For_Production
+  expiration: 86400000
+  refresh-expiration: 604800000
+file:
+  upload-dir: ./uploads
